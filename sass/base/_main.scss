@@ -6,9 +6,31 @@ html, body{
     margin: 0;
     padding: 0;    
 
-    background-color: green;
+    background-color: #dfdce3; 
 }
 
 body{
     height: 100%;  
+}
+
+.content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+
+    padding: 20px; 
+    margin-top: 4em;  
+
+    text-align: center; 
+
+    h1{
+        font-size: 3em;
+        padding: 0; 
+        margin: 0;  
+    }
+
+    p{
+        padding: 10px;  
+    }
 }
