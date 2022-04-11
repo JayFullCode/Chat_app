@@ -1,0 +1,74 @@
+.phone__message{
+    width: 60%;  
+
+    margin-top: 1em; 
+    margin-left: .7em;  
+    padding: .5em;  
+ 
+    border-radius: 15px 15px 15px 0px;    
+
+    font-size: .7em;   
+     
+} 
+
+.phone__message--left{
+    background-color: #ece4f4; 
+    color: hsl(276, 55%, 52%);  
+}
+
+.phone__message--right{
+    color: hsl(271, 15%, 43%);  
+    background-color: white; 
+    align-self: flex-end; 
+}
+
+.phone__message--price{
+
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start;   
+    align-items: center; 
+    
+    background: linear-gradient(90deg, rgba(231,77,252,1) 40% , rgba(140,73,240,1)); 
+
+    color: white; 
+
+    width: 70%;  
+    min-height: 40px;   
+
+    flex: 1 0 0; 
+
+    .circle{
+        border-radius: 50%; 
+        border: 1px solid white;  
+        width: 15px; 
+        height: 15px; 
+
+        margin-right: 1em; 
+    }
+
+    .price{ 
+        font-weight: bolder; 
+        font-size: 1.5em;    
+        padding: 0; 
+        margin: 0; 
+
+        height: 100%; 
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        
+    }
+
+    .time{
+        flex: 1; 
+        height: 100%; 
+        margin: auto; 
+
+        display: flex;
+        align-items: center; 
+    }
+
+}

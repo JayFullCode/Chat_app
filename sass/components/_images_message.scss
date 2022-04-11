@@ -1,0 +1,16 @@
+.images_message{
+    display: flex; 
+    justify-content: flex-end; 
+
+    margin-top: 1em; 
+
+    
+
+    img{
+        height: 40px;
+        width: 40px;
+        margin-right: .4em;
+        
+        border-radius: 10px; 
+    }
+}
