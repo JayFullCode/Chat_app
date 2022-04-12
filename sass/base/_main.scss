@@ -20,6 +20,9 @@ body{
     position: relative; 
 
     padding-top: 25px; 
+      
+    overflow-x: hidden;  
+
 } 
 
 .content{
@@ -66,7 +69,7 @@ body{
 }
 
 .bg-gray{
-    background-color: grey; 
+    background-color: #f9f4fa;  
     height: 500px;
     width: 250px; 
 
@@ -75,6 +78,22 @@ body{
     position: absolute; 
     bottom: 0px;
     right: -100px;  
+}
+
+.main{
+    margin: 0;
+    padding: 0; 
+
+    margin: auto; 
+    width: 80%;   
+    height: 100%; 
+
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+
+    position: relative; 
 }
  
 @include desktop-only{
@@ -86,18 +105,37 @@ body{
 
     }
 
-    .content{
-        flex: 1; 
-
+    .content{ 
         text-align: start; 
 
-        position: relative;
+        display: flex;
+        align-items: flex-start; 
+   
+       padding: 5em;   
+
+        flex: 1;  
     }
 
     .bg-purple{
         width: 400px;  
         max-width: 500px;
         
-        left: -100px;    
+        left: -100px;  
+        
+    }
+
+    .bg-gray{
+        width: 400px;
+        max-width: 500px;
+
+        right: -100px;
+        
+        position: absolute;
+        bottom: 0px; 
+    }
+
+    .main{
+        flex-direction: row;  
+
     }
 }

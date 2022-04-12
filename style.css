@@ -18,6 +18,7 @@ body {
   min-height: 100%;
   position: relative;
   padding-top: 25px;
+  overflow-x: hidden;
 }
 
 .content {
@@ -54,13 +55,26 @@ body {
 }
 
 .bg-gray {
-  background-color: grey;
+  background-color: #f9f4fa;
   height: 500px;
   width: 250px;
   border-radius: 190px 190px 0px 0px;
   position: absolute;
   bottom: 0px;
   right: -100px;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 @media screen and (min-width: 900px) {
@@ -71,9 +85,11 @@ body {
   }
 
   .content {
-    flex: 1;
     text-align: start;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 5em;
+    flex: 1;
   }
 
   .bg-purple {
@@ -81,12 +97,23 @@ body {
     max-width: 500px;
     left: -100px;
   }
+
+  .bg-gray {
+    width: 400px;
+    max-width: 500px;
+    right: -100px;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .main {
+    flex-direction: row;
+  }
 }
 .phone {
   position: relative;
   width: 275px;
   background-color: white;
-  margin: auto;
   padding: 10px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
