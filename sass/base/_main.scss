@@ -1,17 +1,26 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;    
 }
 
 html, body{
     margin: 0;
-    padding: 0;    
-
-    background-color: #dfdce3; 
+    padding: 0;     
 }
 
+html{
+    height: 100%; 
+}
+ 
 body{
-    height: 100%;  
-}
+    font-family: 'Rubik', sans-serif;     
+    min-height: 100%;    
+
+    position: relative; 
+
+    padding-top: 25px; 
+} 
 
 .content{
     display: flex;
@@ -20,17 +29,75 @@ body{
     align-items: center; 
 
     padding: 20px; 
-    margin-top: 4em;  
+    margin-top: 4em;   
+    
+    text-align: center;  
 
-    text-align: center; 
-
+    position: relative; 
+    
     h1{
         font-size: 3em;
         padding: 0; 
         margin: 0;  
+
+        font-weight: bolder;  
     }
 
     p{
-        padding: 10px;  
+        padding: 10px; 
+        opacity: 60%;   
+
+        max-width: 400px;   
+    }
+}
+
+.bg-purple{
+    background: linear-gradient(180deg, rgba(231,77,252,1) 20%, rgba(140,73,240,1)); 
+
+    height: 500px;  
+    width: 250px;         
+    max-width: 250px; 
+
+    border-radius: 0px 0px 190px 190px;    
+     
+    position: absolute;
+    top: 0;
+    left: -100px;         
+}
+
+.bg-gray{
+    background-color: grey; 
+    height: 500px;
+    width: 250px; 
+
+    border-radius: 190px 190px 0px 0px; 
+
+    position: absolute; 
+    bottom: 0px;
+    right: -100px;  
+}
+ 
+@include desktop-only{
+    body{
+        display: flex; 
+
+        justify-content: center; 
+        align-items: center; 
+
+    }
+
+    .content{
+        flex: 1; 
+
+        text-align: start; 
+
+        position: relative;
+    }
+
+    .bg-purple{
+        width: 400px;  
+        max-width: 500px;
+        
+        left: -100px;    
     }
 }
